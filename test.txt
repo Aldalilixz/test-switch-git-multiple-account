@@ -3,3 +3,19 @@ test third commit
 4th time
 5th time with config local email and token host github-personal
 6th time with config work email and token host github-peronal
+
+web tutorial on how to seperate multiple github account in local computer:
+https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t
+
+by finding this in:
+https://stackoverflow.com/questions/3860112/multiple-github-accounts-on-the-same-computer
+
+want to: commit as personal account and appeared in commit history of personal account
+
+conclusion: does not have a way to prove that this method actually seperate the usage of rsa.pub file through using differrent host. But the main pain resolve by just setting github config
+
+git config user.name "Your Name Here"
+git config user.email your@email.example
+
+https://stackoverflow.com/questions/42167345/git-set-local-user-name-and-user-email-different-for-each-repo
+
