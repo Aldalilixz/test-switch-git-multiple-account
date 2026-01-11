@@ -12,10 +12,14 @@ https://stackoverflow.com/questions/3860112/multiple-github-accounts-on-the-same
 
 want to: commit as personal account and appeared in commit history of personal account
 
-conclusion: does not have a way to prove that this method actually seperate the usage of rsa.pub file through using differrent host. But the main pain resolve by just setting github config
+conclusion: can select multiple token for specific repo base on ssh `git@github.com` and `git@github.com-personal`. Tested by initialize new repo that is on `git@github.com-personal` - try to push commit using default token (`git@github.com`) and got 403 permission denied.
+
+token default: `git@github.com`
+personal token: `git@github.com-personal`
+
+btw - to be seen in github account contribute history  - must set config of `user.name` and `user.email` for each repo
 
 git config user.name "Your Name Here"
 git config user.email your@email.example
 
 https://stackoverflow.com/questions/42167345/git-set-local-user-name-and-user-email-different-for-each-repo
-
